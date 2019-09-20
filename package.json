@@ -2,7 +2,11 @@
   "name": "@egendata/cli",
   "version": "0.0.0",
   "description": "A simple CLI for running and developing against the egendata stack",
-  "keywords": ["egendata", "cli", "development"],
+  "keywords": [
+    "egendata",
+    "cli",
+    "development"
+  ],
   "author": "Egendata",
   "contributors": [
     "Johan Öbrink <johan.obrink@gmail.com>"
@@ -16,6 +20,7 @@
     "url": "https://github.com/egendata/cli/issues"
   },
   "dependencies": {
+    "camelcase": "^5.3.1",
     "ip": "^1.1.5",
     "minimist": "^1.2.0"
   },
