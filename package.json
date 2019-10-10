@@ -1,6 +1,6 @@
 {
   "name": "@egendata/cli",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A simple CLI for running and developing against the egendata stack",
   "keywords": [
     "egendata",
@@ -12,6 +12,9 @@
     "Johan Öbrink <johan.obrink@gmail.com>"
   ],
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/egendata/cli.git"
