@@ -20,11 +20,12 @@
     "url": "https://github.com/egendata/cli/issues"
   },
   "dependencies": {
-    "camelcase": "^5.3.1",
-    "ip": "^1.1.5",
-    "minimist": "^1.2.0"
+    "camelcase": "5.3.1",
+    "ip": "1.1.5",
+    "localtunnel": "2.0.0",
+    "subcommander": "1.0.0"
   },
   "bin": {
-    "egendata": "./cli.js"
+    "egendata": "./lib/main.js"
   }
 }
