@@ -1,6 +1,6 @@
 {
   "name": "@egendata/cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple CLI for running and developing against the egendata stack",
   "keywords": [
     "egendata",
