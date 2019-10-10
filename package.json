@@ -23,16 +23,17 @@
     "url": "https://github.com/egendata/cli/issues"
   },
   "dependencies": {
-    "camelcase": "^5.3.1",
-    "ip": "^1.1.5",
-    "minimist": "^1.2.0"
-  },
-  "bin": {
-    "egendata": "./cli.js"
+    "camelcase": "5.3.1",
+    "ip": "1.1.5",
+    "localtunnel": "2.0.0",
+    "subcommander": "1.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
     "semantic-release": "^15.13.24"
+  },
+  "bin": {
+    "egendata": "./lib/main.js"
   }
 }
