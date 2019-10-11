@@ -28,28 +28,50 @@ npx @egendata/cli --help
 All the examples assume the cli is installed. If you choose not to install the
 cli globally, just replace `egendata` with `npx @egendata/cli`.
 
-## Start
+## Tunneling a local service
+
+**Command:** `egendata tunnel [flags] [start command]`
+
+This will use `localtunnel.me` to expose your service on the interwebs
 
 ```bash
-egendata start
+egendata tunnel --port=4000 --subdomain=fooservice npm start
 ```
 
-This will spin up docker containers for the `Operator` on `http://[your-ip]:3000`
+This will open a tunnel on https://fooservice.localtunnel.me pointing to
+http://localhost:4000. It will also call:
+
+```bash
+NODE_ENV=development CLIENT_ID=https://fooservice.localtunnel.me OPERATOR_URL=https://operator-test.dev.services.jtech.se/api PORT=4000 npm start
+```
+
+The Operator URL is that of the test Operator which can be used with the test build of the Egendata app.
+
+## Running Egendata infrastructure locally
+
+**Commands:**
+
+* `egendata infra start`
+
+  This will spin up docker containers for:
+  
+  * **Operator DB:** `postgres://postgresuser:postgrespasword@localhost:5432/egendata`
+  
+  * **Operator:** `http://[your-ip]:3000`
+  
+  * **Logging:** [elasticsearch apm](https://www.elastic.co/products/apm)
+  viewable on `http://localhost:5601`
+
+* `egendata infra stop`
+
+  This stops all docker containers started by `egendata infra start`
 
 ### Flags
 
-* `--apm` – Performance and errors will be logged to **elasticsearch apm**. It can be viewed through **Kibana** on http://localhost:5601
+* `--no-log` – No logging infrastructure
 
-* `--examples` – Starts the **CV** example site. It can be viewed on http://localhost:4000
+* `--no-operator` – No Operator started - only Operator DB
+
+* `--example` – Starts the CV example site on `http://[your-ip]:4000`
 
 * `--attach` – Runs the containers attached to the terminal
-
-* `--pull` – Forces a pull of the latest Egendata images
-
-## Stop
-
-```bash
-egendata stop
-```
-
-Stops all running Egendata services
