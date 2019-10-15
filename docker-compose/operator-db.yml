@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  operator-db:
+    image: postgres:11-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_PASSWORD=postgrespassword
+      - POSTGRES_DB=egendata
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgresuser -d egendata"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - egendata
+
+networks:
+  egendata:
+    driver: bridge
+    name: egendata
