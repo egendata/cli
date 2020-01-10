@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/egendata/cli/compare/v0.1.0...v0.2.0) (2020-01-10)
+
+
+### Features
+
+* 🎸 Added --unsafe flag ([#16](https://github.com/egendata/cli/issues/16)) ([0a32676](https://github.com/egendata/cli/commit/0a32676053ded46d40e13fc98479505e73d5f1d6))
+
 # [0.1.0](https://github.com/egendata/cli/compare/v0.0.0...v0.1.0) (2019-10-10)
 
 
