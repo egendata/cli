@@ -47,6 +47,10 @@ NODE_ENV=development CLIENT_ID=https://fooservice.localtunnel.me OPERATOR_URL=ht
 
 The Operator URL is that of the test Operator which can be used with the test build of the Egendata app.
 
+### Unsafe tunneling
+
+...is of course not recommended but it _is_ possible. Just add the `--unsafe` flag.
+
 ## Running Egendata infrastructure locally
 
 **Commands:**
