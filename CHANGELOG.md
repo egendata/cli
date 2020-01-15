@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/egendata/cli/compare/v0.2.0...v0.3.0) (2020-01-15)
+
+
+### Features
+
+* 🎸 Added flags for mac and open ([#18](https://github.com/egendata/cli/issues/18)) ([8f82849](https://github.com/egendata/cli/commit/8f82849d14ab398d9c096422dc72d52153e3b96b))
+
 # [0.2.0](https://github.com/egendata/cli/compare/v0.1.0...v0.2.0) (2020-01-10)
 
 
