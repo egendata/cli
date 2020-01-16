@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/egendata/cli/compare/v0.3.0...v0.3.1) (2020-01-16)
+
+
+### Bug Fixes
+
+* 🐛 macos mac fix ([#20](https://github.com/egendata/cli/issues/20)) ([1c49511](https://github.com/egendata/cli/commit/1c495119dcdcfe37f39ce8e325acc70a8f23189f))
+
 # [0.3.0](https://github.com/egendata/cli/compare/v0.2.0...v0.3.0) (2020-01-15)
 
 
